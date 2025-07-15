@@ -134,23 +134,116 @@ main {
     font-weight: bold;
     color: #333;
 }
-.districts{
-    margin-bottom: 20px;
+
+/* districts section */
+/* General styling for the districts section */
+.districts {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-footer{
+
+/* Heading style */
+.districts h1 {
     text-align: center;
-    margin: 10px 0;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
 }
-form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+/* Ordered list styling */
+.districts ol {
+    list-style: none; /* remove default numbers */
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
 }
-form input{
-    padding: 10px 50px 10px 10px;
+
+/* Each list item */
+.districts li {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Hover effects */
+.districts li:hover {
+    background-color: #e0f7fa;
+    transform: translateY(-2px);
+}
+
+/* Anchor tag styling */
+.districts a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: 500;
+    display: block;
+}
+
+/* Hover effect for links */
+.districts a:hover {
+    color: #004d40;
+}
+
+
+.container.form-container {
+    background-color: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
+    max-width: 400px;
 }
-.submit{
-    padding: 10px 20px;
+
+form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+select {
+    background-color: #fff;
+}
+
+button.submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+    background-color: #0056b3;
 }
